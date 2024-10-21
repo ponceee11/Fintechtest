@@ -1,0 +1,133 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f8f8f8;
+    color: #1e1e1e;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+/* Logo */
+.logo h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #ffcc00;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+/* Login Button */
+.btn-login {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-login:hover {
+    background-color: #f1c40f;
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("/static/home/phone-mockup.png") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Hero Content */
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: #ffcc00;
+    color: black;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #f1c40f;
+}
+
+/* Section Styling */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.alt-background {
+    background-color: #f4f4f4;
+}
+
+/* Product Grid */
+.products-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
